@@ -3,7 +3,6 @@ const { makeExecutableSchema } = require('@graphql-tools/schema');
 const { applyMiddleware } = require('graphql-middleware');
 const typeDefs = require('./graphql/typeDefs');
 const resolvers = require('./graphql/resolvers');
-const posts = require('./data');
 
 const schema = makeExecutableSchema({
     typeDefs,
